@@ -10,6 +10,5 @@ gen
 .gitignore
 .idea/
 pom.xml
-src/
 target/
 youtube.iml
