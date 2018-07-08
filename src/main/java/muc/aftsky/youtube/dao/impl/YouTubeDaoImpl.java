@@ -20,7 +20,7 @@ import java.util.Map;
 public class YouTubeDaoImpl implements YouTubeDao{
 
     //sql查询语句
-    private final String QUERY_VIDEOCNTAMOUNT = "SELECT cnt,cnt_amount FROM video_cnt_amount ORDER BY cnt_amount DESC LIMIT 20";
+    private final String QUERY_VIDEOCNTAMOUNT = "SELECT cnt,cnt_amount FROM video_cnt_amount ORDER BY cnt DESC";
     private final String QUERY_VIDEOCATEGORY = "SELECT category_id,title FROM video_category";
     private final String QUERY_USVIDEOSUM = "SELECT * FROM us_video_sum";
     private final String QUERY_USTAG1 ="SELECT tags,tags_amount FROM us_tag_1 ORDER BY tags_amount DESC LIMIT 10";

@@ -30,6 +30,13 @@
     <jstl.version>1.2</jstl.version>
   </properties>
   <dependencies>
+    <!-- freemaker 配置start-->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.22</version>
+    </dependency>
+    <!-- freemaker 配置end-->
     <!-- Spring相关项目依赖 start -->
     <!-- Spring核心依赖 start -->
     <dependency>
@@ -78,6 +85,11 @@
       <artifactId>spring-aop</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
     <!-- Spring其他依赖  end-->
     <!-- Spring相关项目依赖 end -->
 
@@ -88,6 +100,7 @@
       <version>${mysql.driver.version}</version>
     </dependency>
     <!-- mysql数据库相关依赖end -->
+
 
     <!-- log日志相关依赖 start -->
     <dependency>

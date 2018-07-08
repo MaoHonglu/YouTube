@@ -1,0 +1,110 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YouTube数据分析 | 首页</title>
+
+    <link href="static/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container-fluid" >
+    <!-- 顶部导航栏-->
+    <nav class="navbar navbar-default" style="padding-left: 0px;" >
+        <div class="container-fluid" style="padding-left: 0!important;border:none;">
+            <div class="navbar-header">
+                <img alt="Brand" src="static/icons/youtube.gif" height="50px" style="float:left;padding-right: 20px">
+                <h4 class="navbar-text">YouTube 视频数据分析</h4>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- 中间巨幕
+
+-->
+<div class="container-fluid">
+    <div class="jumbotron" style="background-image: url('static/images/banner.jpg');background-size: contain;background-repeat: no-repeat;background-color: #fff;background-position: right">
+        <h2>简介</h2>
+        <p style="text-indent: 2em">以下是YouTube视频数据分析结果图表展示。</p>
+    </div>
+</div>
+
+<!-- 分隔线 -->
+<hr/>
+
+<!-- 图表分析结果 -->
+<div class="container-fluid" style="background: rgb(248,250,252);">
+    <div class="page-header">
+        <div>
+            <div>
+                <h4>视频流行趋势分析</h4>
+                <p style="text-indent: 2em">我们拿到的视频数据按日期排列，并且每个视频都有一个Video_id，因此，我们通过分析视频ID出现的次数就可以得到视频的流行趋势</p>
+            </div>
+            <div id="mhl" style="height: 400px;width: 1500px">
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" >
+    <div class="page-header">
+        <div style="margin: 0 auto">
+            <div>
+                <h4>各类视频基本数据分析</h4>
+                <p style="text-indent: 2em">YouTube下面一共的视频分类一共有三十多种视频分类，这里我们简单分析了视频数量最多的前二十个种类的喜欢数、不喜欢数、浏览量和评论数</p>
+            </div>
+            <div id="mhl2" style="height: 400px;width: 1500px">
+            
+            </div>
+            <div id="view" style="height: 400px;width: 1500px">
+            
+            </div>
+            <div id="comment" style="height: 400px;width: 1500px">
+            
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background: rgb(248,250,252);">
+    <div class="page-header">
+        <div>
+            <div>
+                <h4>电影类别视频标签分析</h4>
+                <p style="text-indent: 2em">在电影类视频的标签中，出现次数最多的单词是什么？</p>
+            </div>
+            <div id="tagdiv" style="height: 400px;width: 1500px">
+            
+            </div>
+            <div id="clound" style="height: 200px;width: 1500px">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="page-header">
+        <div >
+            <div>
+                <h4>发布视频数量与星期之间的关系</h4>
+                <p style="text-indent: 2em">一周七天，哪一天发布视频的数量最多？或者说，发布视频数量与星期之间是否有着某种关联？</p>
+            </div>
+            <div id="mhlweekday" style="height: 400px;width: 1500px">
+            
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="static/jquery/jquery-3.3.1.min.js"></script>
+<script src="static/bootstrap/bootstrap.min.js"></script>
+<script src="static/js/echarts.js"></script>
+<script src="static/js/echarts-cloud.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="static/js/mhl.js"></script>
+<script src="static/js/mhl2.js"></script>
+<script src="static/js/mhl3.js"></script>
+</body>
+</html>
