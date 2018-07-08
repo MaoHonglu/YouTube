@@ -69,6 +69,32 @@
     <dispatcher>FORWARD</dispatcher>
   </filter-mapping>
 
+  <!-- 配置Cors AJAX 跨域访问-->
+  <filter>
+    <filter-name>corsFilter</filter-name>
+    <filter-class>muc.aftsky.youtube.util.CorsFilter</filter-class>
+    <init-param>
+      <param-name>allowOrigin</param-name>
+      <param-value>*</param-value>
+    </init-param>
+    <init-param>
+      <param-name>allowMethods</param-name>
+      <param-value>GET,POST,PUT,DELETE,OPTIONS</param-value>
+    </init-param>
+    <init-param>
+      <param-name>allowCredentials</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>allowHeaders</param-name>
+      <param-value>Content-Type</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>corsFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
   <!--配置  HiddenHttpMethodFilter 可以将   POST 请求转为 DELETE、PUT 请求 -->
   <filter>
     <filter-name>hiddenHttpMethodFilter</filter-name>
