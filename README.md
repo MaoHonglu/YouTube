@@ -10,3 +10,5 @@ YouTube视频数据分析前端后台项目
 后端项目的配置只需修改resources文件夹下面的application.development.properties里面的配置项即可。
 
 根目录下的youtube.sql文件夹为YouTube视频数据统计结果。
+
+![网站首页截图](https://github.com/MaoHonglu/YouTube/blob/master/web/10.119.128.23_8080_dist2_index.html.png)
